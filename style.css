@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap");
 
 body {
-    /* background-color: #f3f6ef; */
     margin: 0;
 }
 
@@ -71,16 +70,17 @@ ul {
 }
 
 iframe {
-    height: auto;
+    height: 50vh;
     width: 80vw;
 }
 
 #newsletter-head {
+    padding: 0.4rem;
     font-size: 1.5em;
 }
 
 #email-entry {
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
     text-align: center;
 }
 
@@ -94,16 +94,15 @@ iframe {
 #email {
     font-family: inherit;
     font-size: 15px;
-    margin-top: 15px;
     width: 200px;
     border: 1px solid black;
     border-radius: 2px;
-    padding: 0.6rem;
+    padding: 0.5em;
 }
 
 #submit {
     font-family: inherit;
-    padding: 0.5rem;
+    padding: 0.5em;
     border: 1px solid black;
     border-radius: 2px;
     margin-top: 15px;
@@ -111,53 +110,49 @@ iframe {
 }
 
 #footer {
+    font-family: "Space Mono", monospace;
+    border-top: 0.5px solid black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Space Mono', monospace;
     text-align: center;
-    height: 40px;
-    border-top: 1px solid black;
+    height: 50px;
     margin-top: 15px;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 #footer a {
-    text-decoration: none;
-}
-
-#footer a:hover {
-    opacity: 0.8;
-}
-
-#icons8 {
-    width: 24px;
+    width: auto;
     height: 24px;
     margin-left: 5px;
 }
 
-@media only screen and (max-width: 278px) {
+.foo-icon {
+    height: auto;
+    width: 24px;
+}
+
+.foo-icon:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 278px) {
     #title {
         display: none;
     }
 
     #newsletter-head {
-        font-size: 1em;
-    }
-
-    #email,
-    #submit {
-        padding: 0.2em;
+        font-size: 0.6em;
     }
 
     iframe {
-        height: 40vh;
+        height: 50vh;
         width: 90vw;
     }
 }
 
-@media only screen and (min-width: 321px) {
+@media (min-width: 321px) {
     #header-img {
         height: 32px;
         width: 32px;
@@ -168,12 +163,12 @@ iframe {
     }
 
     iframe {
-        height: 60vh;
+        height: 50vh;
         width: 90vw;
     }
 }
 
-@media only screen and  (max-width: 320px) {
+@media (max-width: 320px) {
     #header-img {
         height: 32px;
         width: 32px;
@@ -193,7 +188,7 @@ iframe {
     }
 }
 
-@media only screen and  (max-width: 426px) {
+@media only screen and (max-width: 426px) {
     #header {
         justify-content: center;
     }
@@ -208,7 +203,7 @@ iframe {
     }
 }
 
-@media only screen and  (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     #nav-bar {
         display: none;
     }
