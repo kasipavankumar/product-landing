@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap");
+
+body {
+    /* background-color: #f3f6ef; */
+    margin: 0;
+}
+
+main {
+    margin: 0;
+}
+
+#header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header-img {
+    height: 42px;
+    width: 42px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#title {
+    font-family: "Major Mono Display", monospace;
+    font-size: 1.9em;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#nav-bar {
+    font-family: "Space Mono", monospace;
+    font-size: 1.1em;
+    margin-left: auto;
+    padding-right: 15px;
+    height: fit-content;
+    width: fit-content;
+}
+
+#nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+#nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.sep {
+    border-bottom: 5px solid black;
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#video-demo {
+    margin-top: 80px;
+    text-align: center;
+}
+
+iframe {
+    height: auto;
+    width: 80vw;
+}
+
+#newsletter-head {
+    font-size: 1.5em;
+}
+
+#email-entry {
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email {
+    font-family: inherit;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.6rem;
+}
+
+#submit {
+    font-family: inherit;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 15px;
+    letter-spacing: 1.25px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    height: 40px;
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding: 0.5em;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer a:hover {
+    opacity: 0.8;
+}
+
+#icons8 {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 278px) {
+    #title {
+        display: none;
+    }
+
+    #newsletter-head {
+        font-size: 1em;
+    }
+
+    #email,
+    #submit {
+        padding: 0.2em;
+    }
+
+    iframe {
+        height: 40vh;
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 321px) {
+    #header-img {
+        height: 32px;
+        width: 32px;
+    }
+
+    #title {
+        font-size: 1.4em;
+    }
+
+    iframe {
+        height: 60vh;
+        width: 90vw;
+    }
+}
+
+@media only screen and  (max-width: 320px) {
+    #header-img {
+        height: 32px;
+        width: 32px;
+    }
+
+    #title {
+        font-size: 1.4em;
+    }
+
+    #newsletter-head {
+        font-size: 1em;
+    }
+
+    #submit,
+    #email {
+        padding: 0.3em;
+    }
+}
+
+@media only screen and  (max-width: 426px) {
+    #header {
+        justify-content: center;
+    }
+
+    #newsletter-head {
+        font-size: 1.5em;
+    }
+
+    #submit,
+    #email {
+        padding: 0.5em;
+    }
+}
+
+@media only screen and  (max-width: 700px) {
+    #nav-bar {
+        display: none;
+    }
+}
