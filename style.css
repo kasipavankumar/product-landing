@@ -71,7 +71,7 @@ ul {
 
 iframe {
     height: 50vh;
-    width: 80vw;
+    width: 90vw;
 }
 
 #newsletter-head {
@@ -117,7 +117,7 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50px;
+    height: 70px;
     margin-top: 15px;
     padding: 0.2em;
 }
@@ -145,11 +145,6 @@ iframe {
     #newsletter-head {
         font-size: 0.6em;
     }
-
-    iframe {
-        height: 50vh;
-        width: 90vw;
-    }
 }
 
 @media (min-width: 321px) {
@@ -160,11 +155,6 @@ iframe {
 
     #title {
         font-size: 1.4em;
-    }
-
-    iframe {
-        height: 50vh;
-        width: 90vw;
     }
 }
 
@@ -206,5 +196,16 @@ iframe {
 @media only screen and (max-width: 700px) {
     #nav-bar {
         display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    #newsletter-head {
+        font-size: 1.3em;
+    }
+
+    #submit,
+    #email {
+        margin-top: 10px;
     }
 }
